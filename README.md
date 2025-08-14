@@ -1,1 +1,1 @@
-# ZHAW-DSF-Summer-School
+# ZHAW Digital Sustainable Finance Summer School
