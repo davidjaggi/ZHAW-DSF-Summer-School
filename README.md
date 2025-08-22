@@ -2,8 +2,11 @@
 
 ## Intro to Python
 
-Jupyter Notebook (Google Colab):
+1. Jupyter Notebook (Google Colab):
 https://colab.research.google.com/drive/11FdrOtFYDrM9kQGlBD8h4lsuZ6bBMh2B?usp=sharing
+
+2. Jupyter Notebook (Google Colab):
+https://colab.research.google.com/drive/1EY34EYTFqoygRl6mJAoSlZeO1ynUvsnc?usp=sharing
 
 ## Intro to Machine Learning in Python
 
