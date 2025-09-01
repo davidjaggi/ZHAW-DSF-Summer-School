@@ -12,8 +12,8 @@
 #     name: python3
 # ---
 
-# %% [markdown]
-# Introduction to Machine Learning in Python
+# %% [markdown] id="236ccd06"
+# # Introduction to Webscraping in Python
 #
 # This step-by-step tutorial demonstrates:
 # 1. Web scraping with requests and BeautifulSoup
@@ -52,7 +52,7 @@
 # - **nltk.tokenize**: Splits text into individual words or sentences
 # - **nltk.stem**: Reduces words to their root form (running → run)
 
-# %% [markdown]
+# %% [markdown] id="c9cd038a"
 # Core libraries for web scraping and data manipulation
 # import requests          # For making HTTP requests to websites
 # from bs4 import BeautifulSoup  # For parsing HTML and extracting text
@@ -82,7 +82,37 @@
 #
 # print("✓ All libraries imported successfully!")
 
-# %% [markdown]
+# %% colab={"base_uri": "https://localhost:8080/"} id="j21rC7LTag6L" outputId="f2f65122-16da-4698-f6d4-02e9d420f44b"
+# Core libraries for web scraping and data manipulation
+import requests          # For making HTTP requests to websites
+from bs4 import BeautifulSoup  # For parsing HTML and extracting text
+import re               # Regular expressions for text pattern matching
+import pandas as pd     # Data manipulation and analysis
+import numpy as np      # Numerical operations and statistics
+from collections import Counter  # Efficient counting of list elements
+
+# Visualization libraries
+import matplotlib.pyplot as plt  # Basic plotting functionality
+from wordcloud import WordCloud  # Creates word cloud visualizations
+import seaborn as sns           # Statistical data visualization
+
+# Natural Language Processing libraries
+import nltk                                    # Natural Language Toolkit
+from nltk.corpus import stopwords            # Common words to filter out
+from nltk.tokenize import word_tokenize, sent_tokenize      # Splits text into words or sentences
+from nltk.stem import PorterStemmer, WordNetLemmatizer  # Word normalization
+
+# Suppress warnings for cleaner output in educational setting
+import warnings
+warnings.filterwarnings('ignore')
+
+# Set up plotting style for consistent, attractive visualizations
+plt.style.use('default')  # Use matplotlib's default clean style
+sns.set_palette("husl")   # Set a colorful palette for better charts
+
+print("✓ All libraries imported successfully!")
+
+# %% [markdown] id="9963a0da"
 # # Download Required NLTK Data
 # NLTK requires specific datasets for tokenization, stopwords, and lemmatization.
 #
@@ -97,7 +127,7 @@
 # ### Why we need this:
 # These datasets contain pre-trained models and word lists that would take years to create manually. They represent linguistic knowledge built by researchers over decades.
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/"} id="0869983f" outputId="7082982c-a5d4-4d2a-9ff4-0d68684944e4"
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
@@ -105,7 +135,7 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 print("✓ NLTK data available!")
 
-# %% [markdown]
+# %% [markdown] id="d656faeb"
 # # Webscraping
 #
 # ### What is Web Scraping?
@@ -141,7 +171,7 @@ print("✓ NLTK data available!")
 # ### robots.txt and Ethics:
 # Always check a website's robots.txt file (e.g., website.com/robots.txt) to see their scraping policy. Respect rate limits and terms of service!
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/"} id="3dda8837" outputId="28e4e196-6eaf-4584-8531-3eeb04009b91"
 # Create headers that mimic a real browser request
 # This makes our request look legitimate and less likely to be blocked
 headers = {
@@ -206,7 +236,7 @@ for element in text_elements:
 raw_text = ' '.join(extracted_text)
 print(f"✓ Successfully extracted {len(raw_text)} characters")
 
-# %% [markdown]
+# %% [markdown] id="018e2d53"
 # # Text Cleaning and Preprocessing
 # Now we'll clean the raw text by removing unwanted characters, URLs, and normalize the text.
 #
@@ -231,7 +261,7 @@ print(f"✓ Successfully extracted {len(raw_text)} characters")
 # - `r'[^a-zA-Z\\s]'`: Matches anything that's NOT a letter or space
 # - `r'\\s+'`: Matches one or more whitespace characters
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/"} id="e827f428" outputId="1bdcd500-3620-4193-ee5b-46eb34844a02"
 print("🧹 Starting comprehensive text cleaning process...")
 
 # Store original text statistics for comparison
@@ -245,24 +275,24 @@ print("✓ Step 1: Converted to lowercase")
 
 # Step 2: Remove URLs using regular expressions
 # Pattern explanation: http[s]? = http or https, followed by URL structure
-cleaned_text = re.sub(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\\\(\\\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '', cleaned_text)
+cleaned_text = re.sub(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '', cleaned_text)
 print("✓ Step 2: Removed URLs")
 
 # Step 3: Remove email addresses
-# Pattern explanation: \\S+ = one or more non-space characters, @ = literal @, \\S+ = more non-space chars
-cleaned_text = re.sub(r'\\S+@\\S+', '', cleaned_text)
+# Pattern explanation: \S+ = one or more non-space characters, @ = literal @, \S+ = more non-space chars
+cleaned_text = re.sub(r'\S+@\S+', '', cleaned_text)
 print("✓ Step 3: Removed email addresses")
 
 # Step 4: Remove special characters and digits
-# Pattern explanation: [^a-zA-Z\\s] = anything NOT (^) a letter (a-zA-Z) or space (\\s)
+# Pattern explanation: [^a-zA-Z\s] = anything NOT (^) a letter (a-zA-Z) or space (\s)
 # This keeps only alphabetic characters and spaces
-cleaned_text = re.sub(r'[^a-zA-Z\\s]', '', cleaned_text)
+cleaned_text = re.sub(r'[^a-zA-Z\s]', '', cleaned_text)
 print("✓ Step 4: Removed special characters and digits")
 
 # Step 5: Normalize whitespace
-# \\s+ matches one or more whitespace characters (spaces, tabs, newlines)
+# \s+ matches one or more whitespace characters (spaces, tabs, newlines)
 # Replace all with single space, then strip leading/trailing spaces
-cleaned_text = re.sub(r'\\s+', ' ', cleaned_text).strip()
+cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
 print("✓ Step 5: Normalized whitespace")
 
 # Calculate cleaning statistics
@@ -274,11 +304,10 @@ print(f"\n📊 Cleaning Results Summary:")
 print(f"   Original: {original_length:,} characters, {original_words:,} words")
 print(f"   Cleaned:  {cleaned_length:,} characters, {cleaned_words:,} words")
 print(f"   Reduction: {reduction_percentage:.1f}% characters removed")
-
 print(f"\n📄 Cleaned text preview:")
 print(f"{cleaned_text[:200]}...")
 
-# %% [markdown]
+# %% [markdown] id="cf16b1fe"
 # # Tokenization
 # Break the text into individual words (tokens) for analysis.
 #
@@ -298,7 +327,7 @@ print(f"{cleaned_text[:200]}...")
 # - **Unique tokens**: How many different words (vocabulary size)
 # - **Token length distribution**: Are words mostly short or long?
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/"} id="3359d888" outputId="87d54a76-8144-4151-ac44-79f01ffeadb5"
 print("🔤 Starting tokenization process...")
 
 # Use NLTK's sophisticated word tokenizer
@@ -333,7 +362,7 @@ long_tokens = [t for t in tokens if len(t) >= 8][:5]
 print(f"   Example short tokens: {short_tokens}")
 print(f"   Example long tokens: {long_tokens}")
 
-# %% [markdown]
+# %% [markdown] id="ccffbc15"
 # # Remove Stopwords and Filter Tokens
 # Remove common words that don't carry much meaning and filter out very short words.
 #
@@ -359,7 +388,7 @@ print(f"   Example long tokens: {long_tokens}")
 # - **Minimum length**: Remove very short words (usually not meaningful)
 # - **Stopword removal**: Remove common English stopwords
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/"} id="b63da8e4" outputId="d8978e63-0184-4c4c-cd21-9d72e03f405f"
 print("🛑 Starting stopword removal and token filtering...")
 
 # Load English stopwords from NLTK
@@ -383,7 +412,7 @@ custom_stopwords = {
     'like', 'way', 'time', 'year', 'years', 'day', 'days', 'people', 'person',
 
     # Common web/document words
-    'include', 'includes', 'including', 'well', 'much', 'many', 'use', 'used', 'using'
+    'include', 'includes', 'including', 'well', 'much', 'many', 'use', 'used', 'using', 'pages', 'page', 'editors', 'tools'
 }
 
 # Combine standard and custom stopwords
@@ -440,7 +469,7 @@ print(f"   Original vocabulary: {original_vocab:,} unique words")
 print(f"   Filtered vocabulary: {filtered_vocab:,} unique words")
 print(f"   Vocabulary reduction: {vocab_reduction:.1f}%")
 
-# %% [markdown]
+# %% [markdown] id="2745aa9c"
 # # Lemmatization - Reducing Words to Root Forms
 # Convert words to their base form (lemmatization) for better analysis.
 #
@@ -464,7 +493,7 @@ print(f"   Vocabulary reduction: {vocab_reduction:.1f}%")
 # ### NLTK's WordNetLemmatizer:
 # Uses the WordNet lexical database to find proper lemmas. More accurate than simple stemming but requires more computational resources.
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/"} id="a8e3e077" outputId="0534a9e7-a3d6-4df6-8b03-cab3ea2d8553"
 print("🔄 Starting lemmatization process...")
 
 # Initialize the WordNet lemmatizer
@@ -512,7 +541,7 @@ print(f"\n✅ Text preprocessing complete!")
 print(f"📊 Final dataset: {len(final_tokens):,} tokens ready for analysis")
 print(f"📊 Final vocabulary: {len(set(final_tokens)):,} unique words")
 
-# %% [markdown]
+# %% [markdown] id="4be85fd6"
 # # Frequency Analysis
 # Analyze the most common words in our sustainable finance text.
 #
@@ -533,7 +562,7 @@ print(f"📊 Final vocabulary: {len(set(final_tokens)):,} unique words")
 # - Context matters (same word can have different meanings)
 # - Needs domain knowledge for proper interpretation
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/", "height": 1000} id="c31dbebf" outputId="2bc69e00-d3f5-40e8-e2b3-0fe07fc928c5"
 print("📊 Starting comprehensive frequency analysis...")
 
 # Use Counter to efficiently count word frequencies
@@ -601,7 +630,7 @@ plt.show()
 
 print("📊 Frequency visualization created!")
 
-# %% [markdown]
+# %% [markdown] id="45495c36"
 # Create Word Cloud
 # Generate a beautiful word cloud visualization from our processed text.
 #
@@ -627,7 +656,7 @@ print("📊 Frequency visualization created!")
 # - Limit words to avoid clutter
 # - Consider your audience when choosing color schemes
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/", "height": 998} id="fb1ad9e6" outputId="c10c702c-5656-4f3d-8046-773615d48ea9"
 print("☁️ Creating word cloud visualization...")
 
 # Prepare text for word cloud by joining tokens back into a single string
@@ -677,7 +706,7 @@ print(f"   Background: {wordcloud.background_color}")
 cloud_words = list(wordcloud.words_.keys())[:20]  # Top 20 words that appear in cloud
 print(f"\n☁️ Top words visible in cloud: {', '.join(cloud_words)}")
 
-# %% [markdown]
+# %% [markdown] id="5a9c4fe4"
 # # Advanced Text Analysis and Insights
 # Generate deeper insights about the text characteristics.
 #
@@ -702,7 +731,7 @@ print(f"\n☁️ Top words visible in cloud: {', '.join(cloud_words)}")
 # - Topic specialization degree
 # - Target audience level
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/", "height": 1000} id="a88a3fbd" outputId="a85c715d-b468-4012-da69-a4c437fa96b4"
 print("🔍 Generating comprehensive text analysis insights...")
 
 # Calculate core text statistics
@@ -801,7 +830,7 @@ print(f"   Vocabulary diversity: {diversity_level}")
 print(f"   Word complexity: {complexity_level}")
 print(f"   Text focus: {'Highly specialized' if len(low_freq_words)/unique_tokens > 0.7 else 'Broadly accessible'}")
 
-# %% [markdown]
+# %% [markdown] id="707db074"
 # # Domain-Specific Analysis for Sustainable Finance
 # Analyze sustainable finance specific terms and concepts.
 #
@@ -825,7 +854,7 @@ print(f"   Text focus: {'Highly specialized' if len(low_freq_words)/unique_token
 # - **Trend analysis**: Track concept evolution over time
 # - **Quality assessment**: Evaluate content comprehensiveness
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/", "height": 1000} id="958033e0" outputId="ae6e640b-8d5c-4fee-e7b4-63aa2c05d7cd"
 print("🌱 Starting domain-specific sustainable finance analysis...")
 
 # Define comprehensive sustainable finance keyword categories
@@ -936,7 +965,7 @@ plt.tight_layout()
 plt.show()
 
 print("📊 Domain-specific visualizations created!")
-# %% [markdown]
+# %% [markdown] id="4b3bbd3f"
 # # BERTopic Modeling for Unsupervised Topic Discovery
 #
 # ### What is BERTopic?
@@ -955,7 +984,7 @@ print("📊 Domain-specific visualizations created!")
 # ### Important Note:
 # BERTopic works best on a collection of documents (like paragraphs or articles). For this analysis, we will treat each scraped paragraph as a separate document.
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/"} id="894d131a" outputId="a678270b-4593-492b-b02e-e343c81c7dbb"
 # Install BERTopic and its dependencies. This might take a few minutes.
 # We use 'quiet' flag to keep the output clean.
 print(" installing BERTopic... This may take a moment.")
@@ -965,31 +994,36 @@ from bertopic import BERTopic
 
 print("✓ BERTopic library installed and imported successfully!")
 
-# %% [markdown]
-# Prepare data for BERTopic
+# %% [markdown] id="ce3eeb47"
+# ## Prepare data for BERTopic
 # BERTopic works on a list of documents. We will re-use the scraped paragraphs as our documents.
 # We also filter out any very short paragraphs that might not contain enough context.
-# print("📄 Preparing documents for BERTopic...")
 #
-# Use the 'extracted_text' from the web scraping step, which contains paragraphs
-# documents = [doc for doc in extracted_text if len(doc.split()) > 15]
-#
-# print(f"   Prepared {len(documents)} documents for modeling.")
-#
+
+# %% colab={"base_uri": "https://localhost:8080/", "height": 275, "referenced_widgets": ["d31e97c6c5de40518be61211a6624bb0", "2e8dd54b495e42138b38bef448266f34", "05a54d92d79a4aabb75b6c4a0202b080", "0023c31558ce48cf9ab8e8b94e2e9ecc", "59a1eb3bbeb4437392cdfa1221d215cb", "8f42996399084600859b2355d49743a6", "55acd9028c30402e9c5a5361fac06bd6", "80740992bea74e298c5d7704570c666d", "91d821637b3a4a998620b8be5f2a5e94", "e905e93ff91644f98f56981111ccbb17", "d29c5fd46cde4918bd7b08639ce02755"]} id="Opd4otUxdIh8" outputId="3a71d82c-e27c-4b85-c754-dfd6ab938d3f"
+print("📄 Preparing documents for BERTopic...")
+
+# Use the 'cleaned_text' from the web scraping step, which contains paragraphs
+# combine chunks of 50 words to a document
+# remove stopwords from cleaned text
+documents = [' '.join(filtered_tokens[i:i+250]) for i in range(0, len(filtered_tokens), 250)]
+
+print(f"   Prepared {len(documents)} documents for modeling.")
+
 # Initialize BERTopic model
 # We use 'english' to remove common English stopwords during topic creation
 # 'min_topic_size' helps avoid creating very small, noisy topics
-# topic_model = BERTopic(language="english", min_topic_size=5, verbose=False)
-#
+topic_model = BERTopic(language="english", min_topic_size=5, verbose=True)
+
 # Fit the model to our documents
 # This process involves creating embeddings, clustering, and identifying topic words
-# print("🧠 Training BERTopic model... This can take several minutes.")
-# topics, probs = topic_model.fit_transform(documents)
-#
-# print("✓ BERTopic model training complete!")
-# print(f"📊 Discovered {len(topic_model.get_topic_info()) - 1} topics (excluding outliers).")
+print("🧠 Training BERTopic model... This can take several minutes.")
+topics, probs = topic_model.fit_transform(documents)
 
-# %% [markdown]
+print("✓ BERTopic model training complete!")
+print(f"📊 Discovered {len(topic_model.get_topic_info()) - 1} topics (excluding outliers).")
+
+# %% [markdown] id="916a7d7d"
 # # Visualizing and Interpreting Topics
 #
 # BERTopic provides powerful interactive visualizations to help understand the discovered topics.
@@ -1009,7 +1043,7 @@ print("✓ BERTopic library installed and imported successfully!")
 # ### Understanding Topic -1:
 # - BERTopic automatically identifies documents that don't fit well into any specific cluster. These are grouped into **Topic -1**, which represents outliers. It's usually the largest topic but can be ignored during analysis of specific themes.
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/", "height": 982} id="fadfaaaa" outputId="b8a03b88-e64d-43aa-f10c-8121e8ae1e8e"
 print("🎨 Generating BERTopic visualizations...")
 
 # Get the main topic info DataFrame
@@ -1023,17 +1057,17 @@ print(topic_info.head(11).to_string())
 print("\n🗺️ Generating Intertopic Distance Map (interactive)...")
 topic_model.visualize_topics()
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/", "height": 552} id="4eac38dc" outputId="2deef6a1-902d-4648-ff3b-8eb42ed08108"
 # Visualize the most important words for the top 8 topics
 print("\n📊 Generating Barchart of Top Words per Topic...")
 topic_model.visualize_barchart(top_n_topics=8, n_words=10)
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/", "height": 402} id="e51a4871" outputId="1f91f73f-29df-4666-db37-53f1fd5e2b47"
 # Visualize the hierarchical structure of the topics
 print("\n🌳 Generating Hierarchical Clustering of Topics...")
 topic_model.visualize_hierarchy(top_n_topics=20)
 
-# %% [markdown]
+# %% [markdown] id="d4ee90b3"
 # # Export Results and Create Final Summary
 #
 # ### What We're Preparing:
@@ -1055,7 +1089,7 @@ topic_model.visualize_hierarchy(top_n_topics=20)
 # - Domain relevance (sustainable finance coverage)
 # - Actionable insights (what the data tells us)
 
-# %%
+# %% colab={"base_uri": "https://localhost:8080/"} id="bcb284ef" outputId="0886d754-c4ac-4ff5-d6b1-f1eeac175766"
 print("💾 Preparing comprehensive final summary and export options...")
 
 # Create a comprehensive analysis summary dictionary
@@ -1165,7 +1199,7 @@ print(f"   • Comparative analysis with other financial texts")
 print(f"   • Machine learning classification models")
 print(f"   • Time series analysis of concept evolution")
 
-# %% [markdown]
+# %% [markdown] id="cb949da7"
 # # Conclusion and Next Steps
 #
 # 🎉 **Congratulations!** You've successfully completed a comprehensive NLP pipeline for sustainable finance text analysis!
@@ -1304,6 +1338,6 @@ print(f"   • Time series analysis of concept evolution")
 #
 # Remember: The goal isn't just to process text, but to discover insights that can drive positive environmental and social impact through better financial decision-making.
 
-# %%
+# %% id="976959d4"
 print("🎯 Tutorial complete! You're ready for advanced NLP applications in sustainable finance!")
 print("📚 Use this foundation to build sophisticated text analysis tools for the summer school!")
