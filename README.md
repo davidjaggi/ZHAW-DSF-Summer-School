@@ -1,7 +1,5 @@
 # ZHAW Digital Sustainable Finance Summer School
 
-# ZHAW Digital Sustainable Finance Summer School
-
 https://github.com/davidjaggi/ZHAW-DSF-Summer-School
 
 ## Intro to Python
