@@ -7,13 +7,19 @@ https://github.com/davidjaggi/ZHAW-DSF-Summer-School
 1. Jupyter Notebook (Google Colab):
 https://colab.research.google.com/drive/11FdrOtFYDrM9kQGlBD8h4lsuZ6bBMh2B?usp=sharing
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/davidjaggi/ZHAW-DSF-Summer-School/HEAD?urlpath=%2Fdoc%2Ftree%2F%2Fblob%2Fmain%2FPython_Intro%2Fpython_intro_1.ipynb)
+
 2. Jupyter Notebook (Google Colab):
 https://colab.research.google.com/drive/1EY34EYTFqoygRl6mJAoSlZeO1ynUvsnc?usp=sharing
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/davidjaggi/ZHAW-DSF-Summer-School/HEAD?urlpath=%2Fdoc%2Ftree%2F%2Fblob%2Fmain%2FPython_Intro%2Fpython_intro_2.ipynb)
 
 ## Intro Webscraping in Python
 
 Jupyter Notebook (Google Colab):
 https://colab.research.google.com/drive/16FS0Ta5xI3ynbfCQi2st5n7psJPilp5w
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/davidjaggi/ZHAW-DSF-Summer-School/HEAD?urlpath=%2Fblob%2Fmain%2FIntro%2520to%2520Webscraping%2520in%2520Python%2FIntro_to_Webscraping.ipynb)
 
 NotebookLM:
 https://notebooklm.google.com/notebook/a045a8c5-4887-454e-ba0b-b0761f66745c
