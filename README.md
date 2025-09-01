@@ -1,5 +1,7 @@
 # ZHAW Digital Sustainable Finance Summer School
 
+https://github.com/davidjaggi/ZHAW-DSF-Summer-School
+
 ## Intro to Python
 
 1. Jupyter Notebook (Google Colab):
