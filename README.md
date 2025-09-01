@@ -1,5 +1,9 @@
 # ZHAW Digital Sustainable Finance Summer School
 
+# ZHAW Digital Sustainable Finance Summer School
+
+https://github.com/davidjaggi/ZHAW-DSF-Summer-School
+
 ## Intro to Python
 
 1. Jupyter Notebook (Google Colab):
@@ -8,10 +12,10 @@ https://colab.research.google.com/drive/11FdrOtFYDrM9kQGlBD8h4lsuZ6bBMh2B?usp=sh
 2. Jupyter Notebook (Google Colab):
 https://colab.research.google.com/drive/1EY34EYTFqoygRl6mJAoSlZeO1ynUvsnc?usp=sharing
 
-## Intro to Webscraping in Python
+## Intro Webscraping in Python
 
 Jupyter Notebook (Google Colab):
-https://colab.research.google.com/drive/1wbSToOhXDctSAqtzfaFz8tURAOTX5-SM?usp=sharing
+https://colab.research.google.com/drive/16FS0Ta5xI3ynbfCQi2st5n7psJPilp5w
 
 NotebookLM:
 https://notebooklm.google.com/notebook/a045a8c5-4887-454e-ba0b-b0761f66745c
