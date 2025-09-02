@@ -5,11 +5,12 @@ https://github.com/davidjaggi/ZHAW-DSF-Summer-School
 ## Intro to Python
 
 1. Jupyter Notebook (Google Colab):
-https://colab.research.google.com/drive/11FdrOtFYDrM9kQGlBD8h4lsuZ6bBMh2B?usp=sharing
+https://colab.research.google.com/github/davidjaggi/ZHAW-DSF-Summer-School/blob/main/Intro%20to%20Python/python_intro_1.ipynb
+(old: https://colab.research.google.com/drive/11FdrOtFYDrM9kQGlBD8h4lsuZ6bBMh2B?usp=sharing)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/davidjaggi/ZHAW-DSF-Summer-School/HEAD?urlpath=%2Fdoc%2Ftree%2F%2FPython_Intro%2Fpython_intro_1.ipynb)
 
-2. Jupyter Notebook (Google Colab):
+3. Jupyter Notebook (Google Colab):
 https://colab.research.google.com/drive/1EY34EYTFqoygRl6mJAoSlZeO1ynUvsnc?usp=sharing
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/davidjaggi/ZHAW-DSF-Summer-School/HEAD?urlpath=%2Fdoc%2Ftree%2F%2FPython_Intro%2Fpython_intro_2.ipynb)
