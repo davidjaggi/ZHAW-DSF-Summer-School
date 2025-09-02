@@ -34,3 +34,6 @@ https://claude.ai/public/artifacts/102e98b5-c778-4f3c-ad50-3791c9f6a0e0
 NotebookLM:
 https://notebooklm.google.com/notebook/31632ac7-d8de-486f-b21e-4fafd0e9ac84
 
+Miro (please add your tools):
+https://miro.com/online-whiteboard/board/uXjVJNCWkOo=/?boardAccessToken=QSn1ewPfg8eI0CHeBwrj56pk0Ttk3ItU
+
