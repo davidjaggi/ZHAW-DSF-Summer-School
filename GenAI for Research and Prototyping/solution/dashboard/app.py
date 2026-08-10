@@ -12,7 +12,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-DATA_PATH = Path(__file__).resolve().parent.parent / "docs" / "data" / "energy_mix.csv"
+DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "energy_mix.csv"
 
 SCORE_COLUMNS = {
     "cost_score": "Cost",
