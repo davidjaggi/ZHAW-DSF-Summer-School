@@ -4,12 +4,12 @@ Students at the ZHAW Summer School should solve a case-study to gain knowledge o
 
 ## Case Study
 
-You are part of Switzerland's energy agency. Switzerland's electricity needs over the
-next 10 years are a given — the task is not to forecast demand, but to decide where
-that electricity should come from. Draft a report and an interactive dashboard that
+You are part of Switzerland's energy agency. Switzerland's energy consumption over the
+next 10 years is a given — the task is not to forecast demand, but to decide where
+that energy should come from. Draft a report and an interactive dashboard that
 answer the following question:
 
-**What should Switzerland's electricity generation mix look like over the next 10 years?**
+**What should Switzerland's energy mix look like over the next 10 years?**
 
 The proposed mix must **sum to 100%** — express the recommendation as a share per
 source (e.g. hydropower 45%, solar 30%, nuclear 15%, wind 7%, biomass/other 3%), not as
@@ -38,7 +38,7 @@ Furthermore, the report should cover policy recommendations.
 
 ### Task 1 — Where are we today?
 
-Research and gather data on the current electricity mix used in Switzerland. Use the
+Research and gather data on Switzerland's current energy consumption and mix. Use the
 [Swiss Energy Dashboard](https://www.energiedashboard.admin.ch/energie/energieverbrauch)
 as a starting point, plus reputable sources such as government reports, academic
 papers, and industry publications.
@@ -62,4 +62,4 @@ dashboard that, at minimum:
 
 Draft a comprehensive report that summarizes the findings, presents the recommended
 mix, explains why it is preferable to the current mix, and provides policy
-recommendations for Switzerland's electricity future.
+recommendations for Switzerland's energy future.

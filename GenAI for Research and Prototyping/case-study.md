@@ -1,4 +1,4 @@
-# Case Study: Switzerland's Future Electricity Mix
+# Case Study: Switzerland's Future Energy Mix
 
 **ZHAW Summer School — GenAI for Research and Prototyping**
 
@@ -8,13 +8,13 @@
 
 ## Your task
 
-You are part of the Swiss energy agency. Switzerland's electricity needs over the next
-10 years are a given — your job is not to forecast demand, but to decide **where that
-electricity should come from**.
+You are part of the Swiss energy agency. Switzerland's energy consumption over the next
+10 years is a given — your job is not to forecast demand, but to decide **where that
+energy should come from**.
 
 Draft a report and prototype an interactive dashboard that answer the following question:
 
-> **What should Switzerland's electricity generation mix look like over the next 10 years?**
+> **What should Switzerland's energy mix look like over the next 10 years?**
 
 Develop an evidence-based recommendation and prototype an interactive dashboard that
 allows policymakers to understand the trade-offs behind your proposed mix.
@@ -23,8 +23,9 @@ allows policymakers to understand the trade-offs behind your proposed mix.
 
 ## The constraint
 
-Your proposed electricity mix must **sum to 100%**. Instead of estimating absolute
-volumes (TWh), express your recommendation as a share of total generation per source, e.g.:
+Your proposed energy mix must **sum to 100%**. Instead of estimating absolute
+volumes (TWh), express your recommendation as a share of total energy consumption per
+source, e.g.:
 
 | Energy source | Recommended share |
 |---|---:|
@@ -44,7 +45,7 @@ You then need to defend **why** this mix is preferable to today's mix.
 Structure your work around three questions:
 
 1. **Where are we today?** Use the [Swiss Energy Dashboard](https://www.energiedashboard.admin.ch/energie/energieverbrauch)
-   as your starting point to understand the current electricity mix.
+   as your starting point to understand Switzerland's current energy consumption and mix.
 2. **What are the trade-offs between technologies?** Research solar, hydro, wind,
    nuclear, and other relevant sources against the criteria below.
 3. **What should Switzerland's future mix look like?** Recommend a share for each
@@ -82,7 +83,7 @@ let data cleaning eat into your research and prototyping time.
 
 Draft a report that:
 
-- Recommends an electricity mix for Switzerland, with shares summing to 100%.
+- Recommends an energy mix for Switzerland, with shares summing to 100%.
 - Considers each of the aspects listed above.
 - Explains why the proposed mix is preferable to the current one.
 - Covers **policy recommendations**.
