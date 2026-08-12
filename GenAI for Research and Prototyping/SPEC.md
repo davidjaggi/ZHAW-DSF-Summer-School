@@ -40,7 +40,8 @@ Furthermore, the report should cover policy recommendations.
 
 Research and gather data on Switzerland's current energy consumption and mix. Use the
 [Swiss Energy Dashboard](https://www.energiedashboard.admin.ch/energie/energieverbrauch)
-as a starting point, plus reputable sources such as government reports, academic
+and the [Federal Office of Energy's overall energy statistics](https://www.bfe.admin.ch/bfe/en/home/supply/statistics-and-geodata/energy-statistics/overall-energy-statistics.html/)
+as a starting point, plus other reputable sources such as government reports, academic
 papers, and industry publications.
 
 ### Task 2 — What are the trade-offs between technologies?
@@ -57,6 +58,11 @@ dashboard that, at minimum:
  - shows the current mix vs. the recommended mix
  - compares energy sources across the main criteria
  - lets the user adjust the importance of 2–3 criteria and see how the recommendation changes
+
+As a reference point, the Federal Council's [Energy Perspectives 2050+](https://www.bfe.admin.ch/bfe/de/home/politik/energieperspektiven-2050-plus.html)
+already analyze one possible development of the energy system under its **Net-Zero
+(ZERO) scenario** — students can use it as a benchmark to compare their own
+recommendation against, or as a starting point to build on.
 
 ### Task 4 — Report
 
