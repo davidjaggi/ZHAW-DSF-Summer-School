@@ -1,3 +1,9 @@
+---
+title: "Research Note 1 — Switzerland's Current Electricity Mix"
+tags: [research, energy-mix, energy-security]
+aliases: ["Current Energy Mix"]
+---
+
 # Research Note 1 — Switzerland's Current Electricity Mix
 
 ## Snapshot (2024/2025)

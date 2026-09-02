@@ -1,3 +1,9 @@
+---
+title: "Research Note 5 — Land Use & Public Acceptance"
+tags: [research, land-use, public-acceptance]
+aliases: ["Land Use and Public Acceptance"]
+---
+
 # Research Note 5 — Land Use & Public Acceptance
 
 ## Land use (generic, international literature — Switzerland has no equivalent official study at this granularity)

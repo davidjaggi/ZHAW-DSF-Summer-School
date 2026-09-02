@@ -1,3 +1,9 @@
+---
+title: "Research Note 4 — Energy Security & Reliability"
+tags: [research, reliability, energy-security]
+aliases: ["Energy Security and Reliability"]
+---
+
 # Research Note 4 — Energy Security & Reliability
 
 ## The core problem: winter, not annual, supply

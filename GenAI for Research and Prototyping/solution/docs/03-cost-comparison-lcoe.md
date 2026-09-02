@@ -1,3 +1,9 @@
+---
+title: "Research Note 3 — Cost Comparison (LCOE)"
+tags: [research, cost]
+aliases: ["Cost Comparison", "LCOE"]
+---
+
 # Research Note 3 — Cost Comparison (LCOE)
 
 ## Global benchmark LCOE (2024, IEA/IRENA weighted averages)

@@ -1,3 +1,8 @@
+---
+title: "energy_mix.csv — Data Dictionary"
+tags: [data, dataset]
+---
+
 # `energy_mix.csv` — data dictionary
 
 Structured, source-by-source dataset that powers the dashboard's charts and scenario slider. It operationalizes the qualitative research in `../01-*.md` … `../06-*.md` into comparable numbers.

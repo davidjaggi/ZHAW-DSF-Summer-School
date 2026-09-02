@@ -1,8 +1,17 @@
+---
+title: "GenAI for Research and Prototyping — Case Study Spec"
+tags: [case-study, spec]
+---
+
 # GenAI for Research and Prototyping
 
 Students at the ZHAW Summer School should solve a case-study to gain knowledge on the use of Generative AI in research and prototyping. The case-study should prepare them to solve one of our real-world problems suggested by our partners. The case-study should take no more than 2 hours to complete.
 
 See [`workshop-guide.md`](workshop-guide.md) for the full facilitator guide (timetable, lecture content, prompting protocol, and reference Streamlit code) behind this case study.
+
+This whole folder is also an **Obsidian-ready vault** — open it as a vault and start at
+[`notes/Home.md`](<notes/Home.md>) for the atomic, wikilinked version of the research notes
+used in the Lecture Block 1 demo.
 
 
 ## Case Study

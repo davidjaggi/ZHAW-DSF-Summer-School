@@ -1,3 +1,8 @@
+---
+title: "Solution — Switzerland's Future Energy Mix"
+tags: [solution, overview]
+---
+
 # Solution — Switzerland's Future Energy Mix
 
 Solution to [`../case-study.md`](../case-study.md) (see also [`../SPEC.md`](../SPEC.md) for the full four-task brief).

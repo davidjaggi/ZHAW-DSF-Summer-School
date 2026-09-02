@@ -1,3 +1,9 @@
+---
+title: "Research Note 6 — Environmental Impact, Scalability & Implementation Time"
+tags: [research, environmental-impact, scalability, implementation-time]
+aliases: ["Environmental Impact and Scalability"]
+---
+
 # Research Note 6 — Environmental Impact, Scalability & Implementation Time
 
 ## Environmental impact (lifecycle, qualitative synthesis)

@@ -1,3 +1,9 @@
+---
+title: "Research Note 2 — Policy & Legal Context"
+tags: [research, policy, law]
+aliases: ["Policy and Legal Context"]
+---
+
 # Research Note 2 — Policy & Legal Context
 
 ## Energy Strategy 2050 (the founding framework)

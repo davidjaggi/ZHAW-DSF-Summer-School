@@ -1,3 +1,8 @@
+---
+title: "Research Notes — Overview"
+tags: [research, overview]
+---
+
 # Research Notes — Switzerland's Future Energy Mix
 
 This folder contains the Task 1 & 2 research and analysis behind [`../report.md`](../report.md) and the interactive dashboard in [`../dashboard/`](../dashboard/).

@@ -1,3 +1,8 @@
+---
+title: "GenAI for Research and Prototyping — Workshop Guide"
+tags: [facilitator-guide, workshop]
+---
+
 # GenAI for Research and Prototyping
 
 **Summer School Workshop: Digital Sustainable Finance (UZH & ZHAW)**
@@ -65,6 +70,12 @@ a worked solution lives in [`solution/`](solution/).
     legal boundaries (Stromgesetz 5 TWh winter import ceiling).
   - See [`Obsidian Guide/Markdown Guide.md`](../Obsidian%20Guide/Markdown%20Guide.md) for the
     reference syntax used in the demo, including the Obsidian-specific `[[link]]` conventions.
+  - **Live demo vault:** this whole `GenAI for Research and Prototyping/` folder opens
+    directly as an Obsidian vault (*Open folder as vault*). Start at
+    [`notes/Home.md`](notes/Home.md), then open
+    [`notes/Themes/Winter Import Gap.md`](<notes/Themes/Winter Import Gap.md>) and
+    [`notes/Themes/Swiss Nuclear Decommissioning Timeline.md`](<notes/Themes/Swiss Nuclear Decommissioning Timeline.md>)
+    side by side to show the `[[wikilink]]` connection live, then switch to Graph View.
 
 ### Lecture Block 2: Prompting, Planning Mode & AI Coding Workflows (25 min)
 

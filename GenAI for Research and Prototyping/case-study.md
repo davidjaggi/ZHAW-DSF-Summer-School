@@ -1,3 +1,9 @@
+---
+title: "Case Study: Switzerland's Future Energy Mix"
+tags: [case-study]
+aliases: ["Case Study Brief"]
+---
+
 # Case Study: Switzerland's Future Energy Mix
 
 **ZHAW Summer School — GenAI for Research and Prototyping**

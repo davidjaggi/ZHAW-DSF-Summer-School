@@ -1,3 +1,9 @@
+---
+title: "Switzerland's Future Energy Mix — Report & Recommendation"
+tags: [report, recommendation, case-study]
+aliases: ["Recommended Portfolio"]
+---
+
 # Switzerland's Future Energy Mix — Report & Recommendation
 
 **Prepared for:** Swiss Federal Office of Energy (case-study role-play)
