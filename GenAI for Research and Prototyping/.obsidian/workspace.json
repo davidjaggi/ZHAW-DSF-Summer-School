@@ -6,7 +6,6 @@
       {
         "id": "4c1879b2d34a6f07",
         "type": "tabs",
-        "dimension": 48.54060913705584,
         "children": [
           {
             "id": "80614353aa969dc2",
@@ -15,28 +14,11 @@
               "type": "markdown",
               "state": {
                 "file": "Resources/Course Materials/1. Slides.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
               "title": "1. Slides"
-            }
-          }
-        ]
-      },
-      {
-        "id": "2951ca87b1330610",
-        "type": "tabs",
-        "dimension": 51.45939086294417,
-        "children": [
-          {
-            "id": "80a9189f865da424",
-            "type": "leaf",
-            "state": {
-              "type": "reveal-preview-view",
-              "state": {},
-              "icon": "slides",
-              "title": "Preview: 1. Slides.md"
             }
           }
         ]
@@ -209,6 +191,9 @@
   },
   "active": "80614353aa969dc2",
   "lastOpenFiles": [
+    "Resources/Course Materials/2. Markdown Basics.md",
+    "Resources/Course Materials/1. Slides.md",
+    "Resources/Course Materials/0. Casestudy.md",
     "Resources/Course Materials/1. Slides.md.tmp.15508.4e703469d5ec",
     "Resources/Course Materials/1. Slides.md.tmp.15508.0fa9f1db7b5c",
     "Resources/Course Materials/1. Slides.md.tmp.15508.fc2dc0a3620b",
@@ -220,16 +205,12 @@
     "Resources/Course Materials/1. Slides.md.tmp.15508.63dddfb7c111",
     "Resources/Course Materials/1. Slides.md.tmp.15508.7e22e8d17f39",
     "README.md.tmp.15508.ce06aacd57cc",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.5424885f7e49",
-    "Resources/Course Materials/0. Casestudy.md",
     "Resources/Course Materials/SPEC.md",
     "Notes/Switzerland Energy Mix/Write/README.md",
     "Notes/Switzerland Energy Mix/Distill/README.md",
     "Notes/Switzerland Energy Mix/Research/README.md",
     "Notes/Switzerland Energy Mix/Structure/README.md",
     "Notes/Switzerland Energy Mix/Question/README.md",
-    "Resources/Course Materials/2. Markdown Basics.md",
-    "Resources/Course Materials/1. Slides.md",
     "Resources/Templates/Source Note.md",
     "Resources/Templates/Concept Note.md",
     "Resources/Templates/Entity Note.md",
