@@ -1,6 +1,6 @@
 # Solution — Switzerland's Future Energy Mix
 
-Solution to [`../case-study.md`](../case-study.md) (see also [`../SPEC.md`](../SPEC.md) for the full four-task brief).
+Solution to [`0. Casestudy.md`](<../Course Materials/0. Casestudy.md>) (see also [`SPEC.md`](<../Course Materials/SPEC.md>) for the full four-task brief).
 
 ## What's in here
 
