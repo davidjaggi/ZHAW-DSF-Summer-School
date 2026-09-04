@@ -6,6 +6,7 @@
       {
         "id": "4c1879b2d34a6f07",
         "type": "tabs",
+        "dimension": 48.54060913705584,
         "children": [
           {
             "id": "80614353aa969dc2",
@@ -15,7 +16,7 @@
               "state": {
                 "file": "Resources/Course Materials/1. Slides.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "1. Slides"
@@ -26,6 +27,7 @@
       {
         "id": "2951ca87b1330610",
         "type": "tabs",
+        "dimension": 51.45939086294417,
         "children": [
           {
             "id": "80a9189f865da424",
@@ -205,19 +207,20 @@
       "slides-extended:Show slide preview": false
     }
   },
-  "active": "80a9189f865da424",
+  "active": "80614353aa969dc2",
   "lastOpenFiles": [
-    "Resources/Course Materials/1. Slides.md.tmp.15508.aa0816211ce0",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.75722373fb45",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.c87364cc193d",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.bb23278cd44c",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.7e4d439fd74e",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.66ca67b6537a",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.716bed42eb3d",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.ab3b85599b49",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.dc4d7935b4c0",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.4ba84649c86e",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.a277ffa44bab",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.4e703469d5ec",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.0fa9f1db7b5c",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.fc2dc0a3620b",
+    "CLAUDE.md",
+    "CLAUDE.md.tmp.15508.ecd7baa4133a",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.cfc6884f62db",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.ea7d9b50a166",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.9a31a7797159",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.63dddfb7c111",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.7e22e8d17f39",
+    "README.md.tmp.15508.ce06aacd57cc",
+    "Resources/Course Materials/1. Slides.md.tmp.15508.5424885f7e49",
     "Resources/Course Materials/0. Casestudy.md",
     "Resources/Course Materials/SPEC.md",
     "Notes/Switzerland Energy Mix/Write/README.md",
@@ -241,7 +244,6 @@
     "Resources/solution/data/README.md",
     "Resources/solution/report.md",
     "Resources/solution/README.md",
-    "Resources/solution/CLAUDE.md",
-    "30 Resources/Course Materials/1. Slides.md"
+    "Resources/solution/CLAUDE.md"
   ]
 }
