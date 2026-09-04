@@ -22,6 +22,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "2951ca87b1330610",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80a9189f865da424",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {},
+              "icon": "slides",
+              "title": "Preview: 1. Slides.md"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,11 +201,13 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "slides-extended:Show slide preview": false
     }
   },
-  "active": "80614353aa969dc2",
+  "active": "80a9189f865da424",
   "lastOpenFiles": [
+    "Resources/Course Materials/1. Slides.md.tmp.15508.aa0816211ce0",
     "Resources/Course Materials/1. Slides.md.tmp.15508.75722373fb45",
     "Resources/Course Materials/1. Slides.md.tmp.15508.c87364cc193d",
     "Resources/Course Materials/1. Slides.md.tmp.15508.bb23278cd44c",
@@ -200,7 +218,6 @@
     "Resources/Course Materials/1. Slides.md.tmp.15508.dc4d7935b4c0",
     "Resources/Course Materials/1. Slides.md.tmp.15508.4ba84649c86e",
     "Resources/Course Materials/1. Slides.md.tmp.15508.a277ffa44bab",
-    "Resources/Course Materials/1. Slides.md.tmp.15508.61e272bf51a9",
     "Resources/Course Materials/0. Casestudy.md",
     "Resources/Course Materials/SPEC.md",
     "Notes/Switzerland Energy Mix/Write/README.md",
